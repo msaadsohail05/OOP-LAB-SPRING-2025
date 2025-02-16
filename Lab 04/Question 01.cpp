@@ -2,9 +2,9 @@
 
 #include<iostream>
 #include<string.h>
- using namespace std;
+using namespace std;
  
- class Book{
+class Book{
  	private:
  		string title;
  		float price;
@@ -66,3 +66,9 @@
 			
 		}	
  };
+ 
+ int main(){
+ 	Book book1;
+ 	
+ 	return 0;
+ }
