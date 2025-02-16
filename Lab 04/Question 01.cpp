@@ -2,18 +2,18 @@
 
 #include<iostream>
 #include<string.h>
-using namespace std;
+ using namespace std;
  
  class Book{
  	private:
  		string title;
  		float price;
- 		int* stock;
+ 		int stock;
  	public:
 		Book(){
 	 		title = "Unknown";
 	 		price = 0.0;
-	 		stock = new int(30);
+	 		stock = 30;
 		}
 		string GetTitle(){
 			return title;
