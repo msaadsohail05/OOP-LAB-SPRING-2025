@@ -41,7 +41,8 @@ class Book{
 		}
 		int simulate(Book array1[],int index){
 			string t;
-			int amount,change,num;
+			int amount,num;
+			float change;
 			cout<<"Enter the title of the book you want: ";
 			cin>>t;
 			for(int i=0;i<index;i++){
@@ -52,6 +53,7 @@ class Book{
 					}
 					else{
 						return 1;
+					}
 					cout<<"The price of the book is: "<<array1[i].GetPrice()<<endl;
 					cout<<"Enter the number of copies you want to buy: ";
 					cin>> num;
@@ -60,12 +62,12 @@ class Book{
 						cout<<"Sorry! Purchase not Possible. Stock limit reached! Number of excess books: "<<-1*copies<<endl;
 						break;
 					}
-					int total = num * array1[i].GetPrice();
-					ApplyDiscount(num,total);
+					float total = num * array1[i].GetPrice();
+					float pr = ApplyDiscount(num,total);
 					cout<<"Enter the amount: ";
 					cin>>amount;
-					change = amount - array1[i].GetPrice();
-					if(change > 0){
+					change = amount - pr;
+					if(change > 0.0){
 						cout<<"Payment Successful!"<<endl<<"Here's your change: "<<change<<endl;
 					}
 					else{
@@ -82,18 +84,20 @@ class Book{
 			
 		}
 		
-		void ApplyDiscount(int n,int p){
+		float ApplyDiscount(int n,float p){
 			if(n>5 && n<10){
 				float nprice = 0.95*p;
 				cout<<"You have been given a discount of 5%!The total is: "<<nprice<<endl;
+				return nprice;
 			}		
 			else if(n>10){
 				float nprice = 0.90*p;
 				cout<<"You have been given a discount of 10%!The total is: "<<nprice<<endl;
-					
+				return nprice;	
 			}
 			else{
 				cout<<"Your Bill is: "<<p<<endl;
+				return p;
 			}
 		}	
  };
