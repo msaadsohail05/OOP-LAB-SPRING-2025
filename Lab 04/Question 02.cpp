@@ -50,6 +50,8 @@ class Book{
 						cout<<"Stock is lower than 5. Reorder!"<<endl;
 						return 0;
 					}
+					else{
+						return 1;
 					cout<<"The price of the book is: "<<array1[i].GetPrice()<<endl;
 					cout<<"Enter the number of copies you want to buy: ";
 					cin>> num;
