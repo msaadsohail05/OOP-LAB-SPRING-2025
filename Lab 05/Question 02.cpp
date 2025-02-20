@@ -1,4 +1,4 @@
-
+    
 //Muahammad Saad Sohail  24K-0549
 
 #include<iostream>
@@ -10,30 +10,46 @@ class Patient{
 		int Id;
 		string Name;
 		int* tests;
+		int NumTests;
 	public:
 		Patient(int id,string n,int t){
 			Id = id;
 			Name = n;
-			tests = new int(t);
+			NumTests = t;
+			tests = new int[NumTests];
+			for(int j=0;j<NumTests;j++){
+				cout<<"Test no. "<<j+1<<":"<<"Enter your test results: ";
+				cin>>tests[j];
+			}
 		}
-		Car(Car& obj){
-			RegistrationNumber = new string(*obj.RegistrationNumber);	
-			ModelName = new string(*obj.ModelName);
-			OwnerName = obj.OwnerName;
+		Patient(Patient& obj){
+			Id = obj.Id;	
+			Name = obj.Name;
+			NumTests = obj.NumTests;
+			tests = new int[NumTests];
+			for(int j=0;j<NumTests;j++){
+				tests[j] = obj.tests[j];
+			}
 		}
 		void Display(){
-			cout<<"Displaying Car Details:-"<<endl;
-			cout<<"Registration Number: "<<*RegistrationNumber<<endl;
-			cout<<"Model Name: "<<*ModelName<<endl;
-			cout<<"Owner Name: "<<*OwnerName<<endl;
+			cout<<"Displaying Patient Details:-"<<endl;
+			cout<<"Patient ID: "<<Id<<endl;
+			cout<<"Patient Name: "<<Name<<endl;
+			for(int i=0;i<NumTests;i++){
+				cout<<i+1<<") "<<tests[i]<<endl;
+			}
 		}
+		 ~Patient(){
+        delete[] tests;
+    }
 };
 
 int main(){
-	Car car1("sda213","x1","Mark");
-	Car car2(car1);
-	cout<<endl;
-	
+	Patient p1(1265,"Mark",4);
+	Patient p2(p1);
+	cout<<"Patient 1:-"<<endl;
+	p1.Display();
+	cout<<"Patient 2:-"<<endl;
+	p2.Display();	
 	return 0;
 }
-
