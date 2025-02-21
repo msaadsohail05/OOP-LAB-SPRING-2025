@@ -1,4 +1,5 @@
 
+
     
 //Muahammad Saad Sohail  24K-0549
 
@@ -35,9 +36,9 @@ class University{
 			name = n;
 			NumProfs = 0;	
 		}
-		void AddProfessor(Professora p){
+		void AddProfessor(Professor* p){
 			NumProfs;
-			*profs[NumProfs] = p;
+			profs[NumProfs] = p;
 			cout<<"Professor added Successfully!"<<endl<<endl;
 			NumProfs++;
 		}
@@ -53,10 +54,9 @@ int main(){
 	Professor p1(124,"Mark","Maths"), p2(486,"Howard","English"), p3(456,"David","Physics");
 	
 	University u1("Fast");
-	u1.AddProfessor(p1);
-	u1.AddProfessor(p2);
-	u1.AddProfessor(p3);
+	u1.AddProfessor(&p1);
+	u1.AddProfessor(&p2);
+	u1.AddProfessor(&p3);
 	u1.displayunidetails();	
 	return 0;
 }
-
