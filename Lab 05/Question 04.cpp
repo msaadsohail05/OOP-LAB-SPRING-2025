@@ -1,5 +1,6 @@
 
 
+
     
 //Muahammad Saad Sohail  24K-0549
 
@@ -9,18 +10,16 @@ using namespace std;
 
 class Battery{
 	private:
-		int Id;
+		//int Id;
 		string Company;
 		int Capacity;
 	public:
 		Battery(int cap){
-			//Id = id;
 			Company = "S Batteries";
 			Capacity = cap;
 		}
 		void Display(){
 			cout<<"Displaying Battery Details:-"<<endl;
-			//cout<<" ID: "<<Id<<endl;
 			cout<<"Company Name: "<<Company<<endl;
 			cout<<"Capacity: "<<Capacity<<endl;
 		}
@@ -31,10 +30,8 @@ class SmartPhone{
 		string name;
 		Battery b;
 	public:
-		SmartPhone(string n,int c){
-			name = n;
-			b(c);	
-		}
+		SmartPhone(string n,int c): name(n),b(c){}
+		
 		void displaydetails(){
 			cout<<endl;
 			cout<<"Smart Phone Name: "<<name<<endl;			
@@ -43,10 +40,9 @@ class SmartPhone{
 };
 
 int main(){
-	SmartPhone s1("Samsung",4000), s2("Xiaomi"5000), s3("Mario",6000);
+	SmartPhone s1("Samsung",4000), s2("Xiaomi",5000), s3("Mario",6000);
 	s1.displaydetails();
 	s2.displaydetails();
 	
 	return 0;
 }
-
