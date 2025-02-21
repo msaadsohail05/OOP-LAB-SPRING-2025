@@ -51,7 +51,7 @@ class University{
 };
 
 int main(){
-	Professor p1(124,"Mark","Maths"), p2(486,"Howard","English"), p3(456,"David","Physics");
+	Professor p1(124,"Mark","AI"), p2(486,"Howard","SE"), p3(456,"David","Computer Science");
 	
 	University u1("Fast");
 	u1.AddProfessor(&p1);
