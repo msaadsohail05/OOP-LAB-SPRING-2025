@@ -13,5 +13,7 @@
 # Question 05
 ![image](https://github.com/user-attachments/assets/952a825c-1eb1-44bd-bab3-0acaeabf22a9)
 
+# Question 06
+![image](https://github.com/user-attachments/assets/8706a71b-e022-41b0-b307-f44a76f3f736)
 
 
