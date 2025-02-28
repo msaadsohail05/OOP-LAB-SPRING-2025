@@ -10,5 +10,8 @@
 # Question 04
 ![image](https://github.com/user-attachments/assets/232ab830-61e5-4060-892b-d2ef8243b97b)
 
+# Question 05
+![image](https://github.com/user-attachments/assets/952a825c-1eb1-44bd-bab3-0acaeabf22a9)
+
 
 
