@@ -48,9 +48,9 @@ class SmartWearable: public SmartPhone , public SmartWatch{
 		void displayDetails()override{
 			cout<<"Displaying Smart Wearable Details: "<<endl;
 			cout<<"Device ID: "<<deviceID<<endl;
-			cout<<"Status: "<<status<<endl;
+			cout<<"Status: "<<(status ? "On" : "Off") <<endl;
 			cout<<"Screen Size"<<screenSize<<endl;
-			cout<<"heart Rate Monitor: "<<heartRateMonitor<<endl;
+			cout<<"heart Rate Monitor: "<<(heartRateMonitor ? "Enabled" : "Disabled")endl;
 		}
 };
 
