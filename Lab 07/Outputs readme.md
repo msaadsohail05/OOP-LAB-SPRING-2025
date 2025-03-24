@@ -1,3 +1,7 @@
+# Question 01
+![image](https://github.com/user-attachments/assets/fccbd208-c531-4662-a995-812f72676576)
+
+
 # Question 02
 ![image](https://github.com/user-attachments/assets/1415e21d-dc51-4c8b-ba43-a0689a9ab82b)
 
