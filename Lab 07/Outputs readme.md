@@ -13,5 +13,6 @@
 ![image](https://github.com/user-attachments/assets/6703770e-85f2-4f9a-a628-a8108564bde5)
 
 # Question 05
-![image](https://github.com/user-attachments/assets/a37a2cdc-8edc-40cc-ac7c-79f3e53c61c2)
+![image](https://github.com/user-attachments/assets/fddb594a-f786-4603-bcaa-0a6d2a4f3c26)
+
 
