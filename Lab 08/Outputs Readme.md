@@ -9,3 +9,7 @@
 
 # Question 04
 ![image](https://github.com/user-attachments/assets/76e605f0-9c17-4491-8387-1a1b480d8c43)
+
+#Question 05
+![image](https://github.com/user-attachments/assets/89ca3cf9-e5f9-4974-99a3-6530198245a1)
+
