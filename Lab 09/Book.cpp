@@ -19,25 +19,31 @@ Book::string getAuthor(){
 Book::string getISBN(){
   return ISBN;
 }
+Library::Library(int c): count(c) {}
+Library::void addBook(Book& b1){
+  if(count<20){
+    books[count] = b1;
+  }
+  else{
+    cout<<"No space left to add another book!"<<endl;
+  }
+}
+
+Library::void removeBook(Book& b1){
+    int flag=0;
+    for(int i=0;i<count;i++){
+        if(books[count].getISBN() == b1.getISBN()){
+          count--;
+          cout<<"Book removed!"<<endl;
+          flag =1;
+        }  
+    }
+  if(flag == 1){
+    cout<<"Book "<<b1.getTitle()<<" has been removed!"<<endl;
+  }
+  else{
+    cout<<"Book "<<b1.getTitle()<<" has was not found!"<<endl;
+  }
+}
 
 
-
-
-class Book{
-  protected:
-    string title,author,ISBN;
-  public:
-    Book();
-    Book(string t,string a,string i);
-    string getTitle()=0;
-    string getAuthor()=0;
-    string getISBN()=0;
-};
-
-class Library: public Book{
-  public:
-    Book books[10];
-    void addBook() = 0;
-    void removeBook()=0;
-    void searchBook()=0;
-};
