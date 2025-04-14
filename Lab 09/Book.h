@@ -15,7 +15,7 @@ class Book{
 class Library: public Book{
   public:
     int count;
-    Library(int c): count(c){}
+    Library(int c);
     Book books[20];
     void addBook(Book& b1) = 0;
     void removeBook(Book& b1)=0;
