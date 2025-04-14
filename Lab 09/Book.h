@@ -7,17 +7,19 @@ class Book{
   public:
     Book();
     Book(string t,string a,string i);
-    void getTitle()=0;
-    void getAuthor()=0;
-    void getISBN()=0;
+    string getTitle()=0;
+    string getAuthor()=0;
+    string getISBN()=0;
 };
 
 class Library: public Book{
   public:
-    Book books[10];
-    void addBook() = 0;
-    void removeBook()=0;
-    void searchBook()=0;
+    int count;
+    Library(int c): count(c){}
+    Book books[20];
+    void addBook(Book& b1) = 0;
+    void removeBook(Book& b1)=0;
+    void searchBook(Book& b1)=0;
 };
 
 #endif
