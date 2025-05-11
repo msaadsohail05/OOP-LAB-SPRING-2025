@@ -1,6 +1,6 @@
 //Muhammad Saad Sohail        24K-0549
 
-Q1
+
 #include <iostream>
 #include <exception>
 
